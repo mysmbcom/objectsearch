@@ -12,7 +12,7 @@ Image preprocessing is crucial for consistent and reliable object search because
 - **Background removal** can interfere with object recognition and similarity matching
 - **Varying color of object** affect comaparing object to object
 - **Different image sizes and aspect ratios** require standardization for neural network inputs
-- **Inconsistent object positioning** within images can lead to poor embeddings
+- **Inconsistent object positioning** affect comaparing object to object
 
 ### Each Normalization Step
 
