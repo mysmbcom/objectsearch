@@ -1,0 +1,32 @@
+{
+  "name": "Python Dev Container",
+  "build": {
+    "dockerfile": "./Dockerfile.development",
+    "context": ".."
+  },
+  "workspaceFolder": "/app",
+  "appPort": [
+    8000
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "python.linting.enabled": true
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-toolsai.jupyter",
+    "GitHub.copilot"
+  ],
+  "remoteUser": "root",
+  "runArgs": [
+    "--network=host"
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/app,type=bind"
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "postCreateCommand": "git config --global user.name superdryhann && git config --global user.email han@askhomer.ai"
+}
